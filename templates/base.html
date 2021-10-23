@@ -1,0 +1,14 @@
+{% comment %} this is for base segements of other html pages   {% endcomment %}
+<!doctype html>
+<html>
+{% load %}
+{% load static %}
+<head>
+<title>{% block title %}{% endblock title %}</title>
+{% block head %}{% endblock head %}
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+{% block body %}{% endblock body %}
+</body>
+</html>

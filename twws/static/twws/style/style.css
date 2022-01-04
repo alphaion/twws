@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Cinzel";
+    src: url("../resources/fonts/glamore-font/Glamore-VGyee.ttf");
+  }
+  
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../resources/fonts/Poppins/Poppins-Regular.ttf");
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFE8D6;
+  }
+  
+  ::-moz-selection {
+    background-color: #282A23;
+    color: #FFE8D6;
+  }
+  
+  ::selection {
+    background-color: #282A23;
+    color: #FFE8D6;
+  }
+  
+  .brand {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  span {
+    font-weight: 600;
+  }
+  
+  a:hover {
+    color: #FF9E52;
+  }
+  
+  .p-cinzel-dark {
+    font-family: "Cinzel";
+    color: #4D2200;
+    letter-spacing: 0.06em;
+  }
+  
+  .p-cinzel-light {
+    font-family: "Cinzel";
+    color: #FFE8D6;
+    letter-spacing: 0.06em;
+  }
+  
+  .p-light-14 {
+    font-family: "Poppins-Regular";
+    color: #FFE8D6;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  
+  .p-dark-14 {
+    font-family: "Poppins-Regular";
+    color: #4D2200;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  
+  .p-dark-18 {
+    font-family: "Poppins-Regular";
+    color: #4D2200;
+    font-size: 18px;
+  }
+  
+  .p-dark-18-bold {
+    font-family: "Poppins-Regular";
+    color: #4D2200;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  header {
+    background-color: #282A23;
+    color: #FFE8D6;
+  }
+  
+  .icon-bg {
+    background-color: #FF9E52;
+  }
+  
+  .dark-bg {
+    background-color: #282A23;
+  }
+  
+  .primary-btn {
+    width: 148px;
+    height: 54px;
+    font-size: 16px;
+    font-family: "Poppins-Regular";
+    border: 1.5px solid #FFE8D6;
+    background-color: #282A23;
+    color: #FFE8D6;
+  }
+  
+  .primary-btn:hover {
+    border: 1.5px solid #282A23;
+    background-color: #FF9E52;
+    color: #282A23;
+  }
+  
+  .secondary-btn {
+    width: 148px;
+    height: 54px;
+    font-size: 16px;
+    border: 1.2px solid #282A23;
+    font-family: "Poppins-Regular";
+    background-color: #FFE8D6;
+    color: #282A23;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #FF9E52;
+    color: #282A23;
+  }
+  
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  main {
+    width: 100%;
+    height: auto;
+    padding-bottom: 12em;
+    background-color: #282A23;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+  
+  main .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  main .container .woolf-image {
+    margin: 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 99;
+  }
+  
+  .current-read {
+    width: 230px;
+    height: 360px;
+    border-radius: 10px;
+    -webkit-box-shadow: 25px 25px 30px #4d210021;
+            box-shadow: 25px 25px 30px #4d210021;
+  }
+  
+  main .container .ellipse-image {
+    margin: -10em auto;
+    margin-bottom: -3em;
+    z-index: -99;
+  }
+  
+  main .container .heading {
+    width: 80%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 0.03em;
+  }
+  
+  section .section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .sub-heading {
+    margin: 0 auto;
+    font-family: "Cinzel";
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  .caption {
+    margin: 1em auto;
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #4D2200;
+  }
+  
+  .post-img {
+    width: 450px;
+    height: 360px;
+  }
+  
+  
+  @media only screen and (max-width: 720px) {
+    main .container .heading {
+      width: 90%;
+      margin: 0 auto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 70px;
+      line-height: 80px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */

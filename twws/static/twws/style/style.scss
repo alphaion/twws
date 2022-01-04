@@ -1,0 +1,217 @@
+// fonts
+@font-face {
+    font-family: "Cinzel";
+    src: url("../resources/fonts/glamore-font/Glamore-VGyee.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../resources/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+// colors
+$primary-col: #FFE8D6;
+$secondary-col: #FF9E52;
+$accent-col: #282A23;
+$basic-col: #ffffff;
+$text-col: #4D2200;
+
+
+// basic
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $primary-col;
+}
+
+::selection{
+    background-color: $accent-col ;
+    color: $primary-col;
+}
+
+.brand{
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+span{
+    font-weight: 600;
+}
+a:hover {
+    color: $secondary-col;
+}
+.p-cinzel-dark{
+    font-family: "Cinzel";
+    color: $text-col;
+    letter-spacing: 0.06em;
+}
+.p-cinzel-light {
+    font-family: "Cinzel";
+    color: $primary-col;
+    letter-spacing: 0.06em;
+}
+
+.p-light-14 {
+    font-family: "Poppins-Regular";
+    color: $primary-col;
+    font-size: 14px;
+    line-height: 28px;
+}
+.p-dark-14 {
+    font-family: "Poppins-Regular";
+    color: $text-col;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.p-dark-18 {
+    font-family: "Poppins-Regular";
+    color: $text-col;
+    font-size: 18px;
+}
+.p-dark-18-bold {
+    font-family: "Poppins-Regular";
+    color: $text-col;
+    font-size: 18px;
+    font-weight: bold;
+}
+header {
+    background-color: $accent-col;
+    color: $primary-col;
+}
+
+.icon-bg{
+    background-color: $secondary-col;
+}
+
+.dark-bg{
+    background-color: $accent-col;
+}
+
+// Primary Buttons
+.primary-btn {
+    width: 148px;
+    height: 54px;
+    font-size: 16px;
+    font-family: "Poppins-Regular";
+    border: 1.5px solid $primary-col;
+    background-color: $accent-col;
+    color: $primary-col;
+}
+.primary-btn:hover {
+    border: 1.5px solid $accent-col;
+    background-color: $secondary-col;
+    color: $accent-col;
+}
+
+// Secondary Button
+.secondary-btn {
+    width: 148px;
+    height: 54px;
+    font-size: 16px;
+    border: 1.2px solid $accent-col;
+    font-family: "Poppins-Regular";
+    background-color: $primary-col;
+    color: $accent-col;
+}
+.secondary-btn:hover {
+    background-color: $secondary-col;
+    color: $accent-col;
+}
+
+// code
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding-bottom: 12em;
+    background-color: $accent-col;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    // clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+}
+
+main .container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+main .container .woolf-image {
+    margin: 0 auto;
+    position: sticky;
+    z-index: 99;
+}
+.current-read{
+    width: 230px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px #4d210021;
+}
+main .container .ellipse-image {
+    margin: -10em auto;
+    margin-bottom: -3em;
+    z-index: -99;
+}
+
+main .container .heading {
+    width: 80%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 0.03em;
+}
+
+section .section{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.sub-heading {
+    margin: 0 auto;
+    font-family: "Cinzel";
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.caption{
+    margin: 1em auto;
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $text-col;
+}
+
+.post-img {
+    width: 450px;
+    height: 360px;
+}
+@media only screen and (max-width: 720px) {
+    main .container .heading {
+        width: 90%;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 80px;
+    }
+  }

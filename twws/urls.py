@@ -31,7 +31,7 @@ from django.contrib.auth.views import (
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path('',Home.as_view(),name="home"),
+    path('',Home.as_view(),name="home"),
     path('login/',LoginView.as_view(),name="login"),
     path('logout/',LogoutView.as_view(),name="logout"),
     path('signup/',UserSignupView.as_view(),name="signup"),
@@ -42,4 +42,4 @@ urlpatterns = [
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    

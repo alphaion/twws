@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="wrapper">
+    <section class="lg:mt-16 mb-8 md:mt-8 sm:mt-6">
+        <section class="body-font">
+            <div class="container px-5 py-12 mx-auto">
+                <div class="text-center mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 sub-heading items-center uppercase">
+                        Currently Reading</h1>
+
+                    <p class="p-dark-18">test</p>
+                    <div class="container items-center justify-center mt-16">
+                        <img class="current-read mx-auto" src="{{CurrentlyReading.cover.url}}"
+                            alt="Virgina-Woolf-Image" ondragstart="return false">
+                    </div>
+                    <h2 class="p-dark-18-bold mt-4">CurrentlyReading.title</h2>
+                    <p class="p-dark-18">by {{CurrentlyReading.author}}</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>    
+{% endblock body %}

@@ -205,6 +205,26 @@ section .section{
     width: 450px;
     height: 360px;
 }
+.pre-books{
+    display: flex;
+    padding: 5em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 35px 0px;
+}
+.pre-reads{
+    width: auto;
+    padding: 5em;
+}
+.box-container{
+    width: 165px;
+    height: auto;
+}
+.pre-read{
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px #4d210021;
+}
 @media only screen and (max-width: 720px) {
     main .container .heading {
         width: 90%;

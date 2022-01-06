@@ -25,4 +25,7 @@ class BookReviewDetailView(DetailView):
     model=Review
     context_object_name="review"
      
+
+class AboutView(TemplateView):
+    template_name="book/about.html"
     

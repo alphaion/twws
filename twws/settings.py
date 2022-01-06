@@ -38,6 +38,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'twws',
+    'book',
     'users',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -23,5 +23,9 @@ class BookOfMonth(models.Model):
         return self.month
             
 class Review(models.Model):
-    pass
+    book=models.ForeignKey(BookModel,on_delete=models.CASCADE)
+    review=models.CharField(max_length=1200)
+
+    def __str__(self):
+        return f"{self.book} review"
     

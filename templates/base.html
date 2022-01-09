@@ -29,13 +29,33 @@
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center uppercase">
                 <a href={% url 'home' %} class="p-light-14 mr-8 ml-8">Home</a>
                 <a href="{% url 'bookofmonth' %}" class="p-light-14 mr-8 ml-8">Botm</a>
-                <a class="p-light-14 mr-8 ml-8">Reviews</a>
-                <a class="p-light-14 mr-8 ml-8">About</a>
+                <a href="{% url 'reviews' %}" class="p-light-14 mr-8 ml-8">Reviews</a>
+                <a href="{% url 'about' %}"  class="p-light-14 mr-8 ml-8">About</a>
+                {% if not user.is_authenticated %}
+                <a href="{% url 'login' %}"  class="p-light-14 mr-8 ml-8">login</a>
+                {% endif %}
             </nav>
-            <a href={% url 'signup' %}>
+            {% if user.is_authenticated %}
+            <div class="flex space-x-2">
+                {% comment %} <a href={% url 'users:profile' user.username %}> {% endcomment %}
+                  <div class="relative w-10 h-10">
+                    <img class="rounded-full border-2 border-gray-100 p-light-14 shadow-sm"
+                      {% comment %} src="{% static 'games/icons/profilelogo.png' %}" alt="user image" />  {% endcomment %}
+                      src="https://cdn.icon-icons.com/icons2/933/PNG/512/round-account-button-with-user-inside_icon-icons.com_72596.png" alt="user image" /> 
+                    <div class="absolute top-0 right-0 h-3 w-3 my-1 border-2 border-white rounded-full bg-green-400 z-2"></div>
+                  </div>
+                </a>
+            </div>
+            <a href={% url  'logout' %}>
+                <button 
+                    class="secondary-btn p-dark items-center border-0 py-1 px-3 mt-4 md:mt-0 mr-8 ml-8">Logout</button>
+            </a>
+            {% else %}
+            <a href={% url  'signup' %}>
             <button 
                 class="secondary-btn p-dark items-center border-0 py-1 px-3 mt-4 md:mt-0 mr-8 ml-8">Signup</button>
-            </a>    
+            </a>
+            {% endif %}    
 </div>
     
     {% block header %}
